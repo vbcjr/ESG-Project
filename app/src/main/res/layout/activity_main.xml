@@ -6,6 +6,131 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Ranking dos Colaboradores"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/txt_pontos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meus Pontos"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/button_ranking"
+        app:layout_constraintStart_toStartOf="@id/button_ranking"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/txt_posicao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="186º Lugar"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/txt_pontos"
+        app:layout_constraintEnd_toEndOf="@id/button_ranking"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txt_caminhada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caminhada"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/txt_pontos"
+        app:layout_constraintStart_toStartOf="@id/button_ranking"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/txt_porcentagem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="42%"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/txt_caminhada"
+        app:layout_constraintEnd_toEndOf="@id/button_ranking"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/txt_voluntariado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voluntariado"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/barra_base"
+        app:layout_constraintStart_toStartOf="@id/button_ranking"
+        android:layout_marginTop="24dp"/>
+
+    <TextView
+        android:id="@+id/txt_porcentagem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="23%"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@+id/txt_voluntariado"
+        app:layout_constraintEnd_toEndOf="@id/button_ranking"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver mais"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/barra_base2"
+        app:layout_constraintEnd_toEndOf="@id/txt_porcentagem2"
+        android:layout_marginTop="24dp"/>
+
+    <View
+        android:id="@+id/barra_base"
+        style="@style/barra_base"
+        app:layout_constraintTop_toBottomOf="@id/txt_caminhada"
+        app:layout_constraintStart_toStartOf="@id/txt_caminhada"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/barra_principal"
+        style="@style/barra_principal"
+        app:layout_constraintTop_toBottomOf="@id/txt_caminhada"
+        app:layout_constraintStart_toStartOf="@id/txt_caminhada"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="250dp"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/barra_base2"
+        style="@style/barra_base"
+        app:layout_constraintTop_toBottomOf="@id/txt_voluntariado"
+        app:layout_constraintStart_toStartOf="@id/txt_voluntariado"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/barra_principal2"
+        style="@style/barra_principal"
+        app:layout_constraintTop_toBottomOf="@id/txt_voluntariado"
+        app:layout_constraintStart_toStartOf="@id/txt_voluntariado"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="350dp"
+        android:layout_marginTop="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

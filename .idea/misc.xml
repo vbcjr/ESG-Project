@@ -3,15 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/drawable/barra1.xml" value="0.1785" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/drawable/barra2.xml" value="0.1785" />
         <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/drawable/button.xml" value="0.139" />
         <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/drawable/button2.xml" value="0.139" />
         <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/drawable/button3.xml" value="0.139" />
         <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/drawable/button4.xml" value="0.139" />
         <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/drawable/container_components.xml" value="0.139" />
         <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/drawable/container_form.xml" value="0.139" />
-        <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/layout/activity_form_login.xml" value="0.25" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/drawable/divider.xml" value="0.1785" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/layout/activity_form_login.xml" value="0.1" />
         <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/layout/activity_form_login2.xml" value="0.25" />
-        <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/layout/activity_main.xml" value="0.10507246376811594" />
+        <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/lucas/AndroidStudioProjects/ESG/app/src/main/res/layout/activity_start_screen.xml" value="0.18" />
       </map>
     </option>

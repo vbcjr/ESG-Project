@@ -25,7 +25,7 @@
         android:id="@+id/sou_empresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="<-    Sou Empresa"
+        android:text="Sou Empresa"
         android:textSize="16dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +65,7 @@
         android:id="@+id/container_form_email"
         style="@style/container_form"
         app:layout_constraintTop_toBottomOf="@+id/txt_email"
+        app:layout_constraintStart_toStartOf="@id/edt_email"
         android:background="@drawable/container_form"
         android:layout_marginTop="8dp"
         />
@@ -95,6 +96,7 @@
         android:id="@+id/container_form_senha"
         style="@style/container_form"
         app:layout_constraintTop_toBottomOf="@+id/txt_senha"
+        app:layout_constraintStart_toStartOf="@id/edt_senha"
         android:background="@drawable/container_form"
         android:layout_marginTop="8dp"
         />
@@ -132,6 +134,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_entrar"
-        android:layout_margin="20dp"
+        android:layout_margin="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
