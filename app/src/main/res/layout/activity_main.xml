@@ -7,11 +7,35 @@
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_acessibilidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Barra de Acessibilidade"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/txt_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Empresa S.A."
+        android:textSize="20dp"
+        android:textColor="@color/green_esg"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/button_acessibilidade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_ranking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/button4"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_empresa"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="32dp"
         android:layout_marginLeft="20dp"
