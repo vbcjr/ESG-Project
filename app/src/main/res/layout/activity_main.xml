@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -111,7 +118,44 @@
         app:layout_constraintEnd_toEndOf="@id/button_ranking"
         android:layout_marginTop="6dp"/>
 
+    <View
+        android:id="@+id/barra_base"
+        style="@style/barra_base"
+        app:layout_constraintTop_toBottomOf="@id/txt_caminhada"
+        app:layout_constraintStart_toStartOf="@id/txt_caminhada"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/barra_principal"
+        style="@style/barra_principal"
+        app:layout_constraintTop_toBottomOf="@id/txt_caminhada"
+        app:layout_constraintStart_toStartOf="@id/txt_caminhada"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="250dp"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/barra_base2"
+        style="@style/barra_base"
+        app:layout_constraintTop_toBottomOf="@id/txt_voluntariado"
+        app:layout_constraintStart_toStartOf="@id/txt_voluntariado"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="8dp"/>
+
+    <View
+        android:id="@+id/barra_principal2"
+        style="@style/barra_principal"
+        app:layout_constraintTop_toBottomOf="@id/txt_voluntariado"
+        app:layout_constraintStart_toStartOf="@id/txt_voluntariado"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="350dp"
+        android:layout_marginTop="8dp"/>
+
     <TextView
+        android:id="@+id/txt_vermais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ver mais"
@@ -122,39 +166,254 @@
         android:layout_marginTop="24dp"/>
 
     <View
-        android:id="@+id/barra_base"
-        style="@style/barra_base"
-        app:layout_constraintTop_toBottomOf="@id/txt_caminhada"
-        app:layout_constraintStart_toStartOf="@id/txt_caminhada"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="8dp"/>
+       android:id="@+id/divider"
+        style="@style/divider"
+        app:layout_constraintTop_toBottomOf="@id/txt_vermais"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"/>
 
-    <View
-        android:id="@+id/barra_principal"
-        style="@style/barra_principal"
-        app:layout_constraintTop_toBottomOf="@id/txt_caminhada"
-        app:layout_constraintStart_toStartOf="@id/txt_caminhada"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="250dp"
-        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/txt_feed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Feed dos Colaboradores"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintStart_toStartOf="@id/divider"
+        android:layout_marginTop="40dp"/>
 
-    <View
-        android:id="@+id/barra_base2"
-        style="@style/barra_base"
-        app:layout_constraintTop_toBottomOf="@id/txt_voluntariado"
-        app:layout_constraintStart_toStartOf="@id/txt_voluntariado"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="8dp"/>
+    <TextView
+        android:id="@+id/txt_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOJE - 24/02/2022"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/txt_feed"
+        app:layout_constraintStart_toStartOf="@id/txt_feed"
+        android:layout_marginTop="24dp"/>
 
-    <View
-        android:id="@+id/barra_principal2"
-        style="@style/barra_principal"
-        app:layout_constraintTop_toBottomOf="@id/txt_voluntariado"
-        app:layout_constraintStart_toStartOf="@id/txt_voluntariado"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="350dp"
-        android:layout_marginTop="8dp"/>
+    //INICIO CARD 1
+
+    <ImageView
+        android:id="@+id/card_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_card_1"
+        app:layout_constraintTop_toBottomOf="@id/txt_data"
+        app:layout_constraintStart_toStartOf="@id/txt_data"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintHeight_max="400dp"
+        android:layout_marginTop="8dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_nome_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rafaela Andrade"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_perfil"
+        app:layout_constraintTop_toBottomOf="@id/card_1"
+        app:layout_constraintStart_toStartOf="@id/txt_data"
+        android:layout_marginTop="-8dp"/>
+
+    <TextView
+        android:id="@+id/txt_link_perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@rafaandrade"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_perfil"
+        app:layout_constraintStart_toStartOf="@id/txt_nome_perfil"
+        android:layout_marginTop="-24dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txt_pontuacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 pontos"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/card_1"
+        app:layout_constraintEnd_toEndOf="@id/txt_vermais"
+        android:layout_marginTop="1dp"/>
+
+    //FIM CARD 1
+
+    //INICIO CARD 2
+    <ImageView
+        android:id="@+id/card_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_card_2"
+        app:layout_constraintTop_toBottomOf="@id/txt_link_perfil"
+        app:layout_constraintStart_toStartOf="@id/txt_data"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintHeight_max="400dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_nome_perfil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lídia Avelar"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_perfil"
+        app:layout_constraintTop_toBottomOf="@id/card_2"
+        app:layout_constraintStart_toStartOf="@id/txt_data"
+        android:layout_marginTop="-8dp"/>
+
+    <TextView
+        android:id="@+id/txt_link_perfil2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@lidiaaaa"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_perfil2"
+        app:layout_constraintStart_toStartOf="@id/txt_nome_perfil2"
+        android:layout_marginTop="-24dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txt_pontuacao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40 pontos"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/card_2"
+        app:layout_constraintEnd_toEndOf="@id/txt_vermais"
+        android:layout_marginTop="1dp"/>
+
+    //FIM CARD 2
+
+    //INICIO CARD 3
+    <ImageView
+        android:id="@+id/card_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_card_3"
+        app:layout_constraintTop_toBottomOf="@id/txt_link_perfil2"
+        app:layout_constraintStart_toStartOf="@id/txt_data"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintHeight_max="400dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_nome_perfil3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cátia Onório"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_perfil"
+        app:layout_constraintTop_toBottomOf="@id/card_3"
+        app:layout_constraintStart_toStartOf="@id/txt_data"
+        android:layout_marginTop="-8dp"/>
+
+    <TextView
+        android:id="@+id/txt_link_perfil3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@catia_onorio"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_perfil3"
+        app:layout_constraintStart_toStartOf="@id/txt_nome_perfil3"
+        android:layout_marginTop="-24dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txt_pontuacao3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25 pontos"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/card_3"
+        app:layout_constraintEnd_toEndOf="@id/txt_vermais"
+        android:layout_marginTop="1dp"/>
+
+    //FIM DO CARD 3
+
+    //INICIO DO CARD 4
+    <ImageView
+        android:id="@+id/card_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_card_4"
+        app:layout_constraintTop_toBottomOf="@id/txt_link_perfil3"
+        app:layout_constraintStart_toStartOf="@id/txt_data"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintHeight_max="400dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_nome_perfil4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simon Zhu"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:drawableStart="@drawable/ic_perfil"
+        app:layout_constraintTop_toBottomOf="@id/card_4"
+        app:layout_constraintStart_toStartOf="@id/txt_data"
+        android:layout_marginTop="-8dp"/>
+
+    <TextView
+        android:id="@+id/txt_link_perfil4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@smnzhu"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_perfil4"
+        app:layout_constraintStart_toStartOf="@id/txt_nome_perfil4"
+        android:layout_marginTop="-24dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/txt_pontuacao4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="60 pontos"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/card_4"
+        app:layout_constraintEnd_toEndOf="@id/txt_vermais"
+        android:layout_marginTop="1dp"/>
+
+    //FIM DO CARD 4
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button6"
+        app:layout_constraintStart_toStartOf="@+id/txt_nome_perfil4"
+        app:layout_constraintTop_toBottomOf="@+id/txt_nome_perfil4"
+        android:text="Ver Mais"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button6"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,6 +13,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/background_login"
     tools:context=".FormLogin">
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Container_acessibilidade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableEnd="@drawable/ic_acessibilidade2"
+        android:layout_marginTop="20dp"/>
 
     <TextView
         android:id="@+id/acesse_conta"
@@ -21,11 +35,13 @@
         android:layout_marginTop="88dp"
         />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/sou_empresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sou Empresa"
+        android:text="  Sou Empresa"
+        android:background="#00FFFFFF"
+        android:drawableStart="@drawable/ic_arrow_back"
         android:textSize="16dp"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,6 +91,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="jana@example.com"
+        android:inputType="textEmailAddress"
         app:layout_constraintTop_toTopOf="@id/container_form_email"
         app:layout_constraintStart_toStartOf="@id/container_form_email"
         android:layout_marginLeft="8dp"
@@ -106,6 +123,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="********"
+        android:inputType="numberPassword"
         app:layout_constraintTop_toTopOf="@id/container_form_senha"
         app:layout_constraintStart_toStartOf="@id/container_form_senha"
         android:layout_marginLeft="8dp"
@@ -137,3 +155,4 @@
         android:layout_margin="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
