@@ -1,8 +1,10 @@
 package br.com.empresa.esg
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatButton
@@ -15,6 +17,20 @@ class FormularioCadastro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         getSupportActionBar()?.hide();
         setContentView(R.layout.activity_formulario_cadastro)
+
+        val voltar: Button = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.button_voltar)
+
+        voltar.setOnClickListener{
+            val i = Intent(this, FormLogin::class.java)
+            startActivity(i)
+        }
+
+        val salvaralteracoes: Button = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.button_salvaralteracoes)
+
+        salvaralteracoes.setOnClickListener{
+            val i = Intent(this, MainActivity::class.java)
+            startActivity(i)
+        }
 
         val pesquisaCep : AppCompatButton = findViewById(R.id.button7)
         val cep : EditText = findViewById(R.id.edt_cep)
@@ -31,6 +47,7 @@ class FormularioCadastro : AppCompatActivity() {
 
                     response.body()?.let {
                         Log.i("CEP", it.toString())
+
                         Toast.makeText(this@FormularioCadastro, it.toString(), Toast.LENGTH_LONG).show()
                     } ?: Toast.makeText(this@FormularioCadastro, "CEP não localizado", Toast.LENGTH_LONG).show()
                 }
