@@ -26,5 +26,12 @@ class FormLogin2 : AppCompatActivity() {
             startActivity(i)
         }
 
+        val cadastrar: Button = findViewById<androidx.appcompat.widget.AppCompatButton>(R.id.linkcadastrar)
+
+        entrar.setOnClickListener{
+            val i = Intent(this, FormularioCadastro::class.java)
+            startActivity(i)
+        }
+
     }
 }

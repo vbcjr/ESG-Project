@@ -409,3 +409,4 @@
             android:textStyle="bold"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
